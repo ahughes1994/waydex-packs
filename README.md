@@ -17,9 +17,13 @@ Each `<COUNTY>.pack.db.gz` is a gzip-compressed SQLite database. Waydex opens it
 
 West Yorkshire and the East Riding of Yorkshire ship inside the app, so they aren't here.
 
+## Routing data
+
+Each `<REGION>.routing.tar.gz` holds [Valhalla](https://github.com/valhalla/valhalla) routing tiles for one of England's nine regions, built from OpenStreetMap. Waydex works routes out on the phone from these tiles, so it never sends a route anywhere. A tile on a region's border is in both regions' files. `routing.json` lists every region with its counties, download size and SHA-256 checksum.
+
 ## Licence and attribution
 
-- The packs are derived from OpenStreetMap: **© OpenStreetMap contributors**. They're available under the [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/) (ODbL). If you use them, you must say they're from OpenStreetMap, and anything you build from them must stay under the ODbL.
+- The packs and the routing data are derived from OpenStreetMap: **© OpenStreetMap contributors**. They're available under the [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/) (ODbL). If you use them, you must say they're from OpenStreetMap, and anything you build from them must stay under the ODbL.
 - The county outlines contain OS data © Crown copyright and database right 2025, used under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). They come from OS Boundary-Line.
 - The OpenStreetMap data comes from [Geofabrik](https://download.geofabrik.de/europe/united-kingdom/england.html)'s county extracts, and each pack records its own data date.
 
